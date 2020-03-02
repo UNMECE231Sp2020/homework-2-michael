@@ -1,10 +1,10 @@
 #include <iostream>
-
+#include "krabby.hpp"
 int main() {
 	Complex c1;
 	c1.print();
 
-	Complex c2(1.0);
+	Complex c2(1.0, 0.0);
 	c2.print();
 
 	Complex c3(3.0, 4.0);
@@ -31,8 +31,8 @@ int main() {
 	std::cout << "Should be 0.372791 - 0.0946746j" << std::endl;
 
 	//Magnitude
-	std::cout << "Magnitude: " << c3.magnitude() << " should be 5" << std::endl;
-	std::cout << "Magnitude: " << c4.magnitude() << " should be 13" << std::endl;
+	std::cout << "Magnitude: " << c3.mag() << " should be 5" << std::endl;
+	std::cout << "Magnitude: " << c4.mag() << " should be 13" << std::endl;
 
 	//Phase
 	std::cout << "Phase: " << c3.phase() << " should be 53.1301" << std::endl;
